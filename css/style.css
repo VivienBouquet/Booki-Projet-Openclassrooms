@@ -1,0 +1,81 @@
+@import url(./normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  border: px solid black;
+}
+html {
+  --blue-color: #0065fc;
+  --lightblue-color: #deebff;
+  --grey-color: #f2f2f2;
+}
+body {
+  max-width: 1450px;
+  font-weight: 500;
+}
+
+/* HEADER */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 70px;
+}
+#logo {
+  height: 45px;
+  width: 95px;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+nav li {
+  padding: 40px 30px;
+  position: relative;
+}
+.hebergements {
+  border-top: 2px solid var(--blue-color);
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+.hebergements a {
+  color: var(--blue-color);
+}
+
+/* Media Query */
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 20px;
+  }
+  nav ul {
+    width: 100%;
+    position: relative;
+  }
+  nav li {
+    padding: 15px 40px;
+    width: 50%;
+  }
+  nav a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  .hebergements {
+    border-top: none;
+    border-bottom: 3px solid var(--blue-color);
+  }
+  .activites {
+    border-bottom: 3px solid var(--grey-color);
+  }
+}
