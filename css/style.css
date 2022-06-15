@@ -92,7 +92,7 @@ h1 {
 #filter {
   display: flex;
   align-items: center;
-  margin: 40px 0 ;
+  margin: 35px 0 ;
   font-size: 17px;
   font-weight: 800;
 }
@@ -125,6 +125,17 @@ h1 {
 }
 
 /* MAIN HEADING_PAGE INFO */
+
+#info {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+#info i {
+  color: var(--blue-color);
+  font-size: 20px;
+  padding: 10px;
+}
 /* Media Query */
 
 @media screen and (max-width: 768px) {
