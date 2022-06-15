@@ -8,12 +8,10 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
-      integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM"
+    <script
+      src="https://kit.fontawesome.com/4d0abfb694.js"
       crossorigin="anonymous"
-    />
+    ></script>
     <title>Booki</title>
   </head>
 
@@ -22,8 +20,8 @@
       <nav>
         <img id="logo" src="./images/logo/Booki.png" alt="logo Booki" />
         <ul>
-          <li class="hebergements"><a href="#">Hébergements</a></li>
-          <li class="activites"><a href="#">Activités</a></li>
+          <li class="hebergements"><a href="#accomodation">Hébergements</a></li>
+          <li class="activites"><a href="#activity">Activités</a></li>
         </ul>
       </nav>
     </header>
@@ -35,31 +33,31 @@
           <p>En plein centre ville ou en pleine nature</p>
         </div>
         <div id="search_form">
-          <i></i>
+          <i class="fa-solid fa-location-dot"></i>
           <form action="get"></form>
           <p>Rechercher</p>
         </div>
         <div id="filter">
           <h2>Filtres</h2>
           <div>
-            <i></i>
+            <i class="fa-solid fa-money-bill-1-wave"></i>
             <p>Économique</p>
           </div>
           <div>
-            <i></i>
+            <i class="fa-solid fa-child-reaching"></i>
             <p>Familial</p>
           </div>
           <div>
-            <i></i>
+            <i class="fa-solid fa-heart"></i>
             <p>Romantique</p>
           </div>
           <div>
-            <i></i>
+            <i class="fa-solid fa-dog"></i>
             <p>Animaux autorisés</p>
           </div>
         </div>
         <div id="info">
-          <i></i>
+          <i class="fa-solid fa-circle-info"></i>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
       </div>
@@ -72,37 +70,73 @@
               <img src="" alt="" />
               <h3>Auberge La Cannebière</h3>
               <p>Nuit à partir de <strong>25€</strong></p>
-              <i></i>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
             </div>
             <div class="accomodation_content">
               <img src="" alt="" />
               <h3>Hôtel du port</h3>
               <p>Nuit à partir de <strong>52€</strong></p>
-              <i></i>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
             </div>
             <div class="accomodation_content">
               <img src="" alt="" />
               <h3>Hôtel Les mouettes</h3>
               <p>Nuit à partir de <strong>76€</strong></p>
-              <i></i>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
             </div>
             <div class="accomodation_content">
               <img src="" alt="" />
               <h3>Hôtel de la mer</h3>
               <p>Nuit à partir de <strong>46€</strong></p>
-              <i></i>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
             </div>
             <div class="accomodation_content">
               <img src="" alt="" />
               <h3>Auberge Le Panier</h3>
               <p>Nuit à partir de <strong>23€</strong></p>
-              <i></i>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
             </div>
             <div class="accomodation_content">
               <img src="" alt="" />
               <h3>Hôtel chez Amina</h3>
               <p>Nuit à partir de <strong>96€</strong></p>
-              <i></i>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
             </div>
           </div>
           <p>Afficher plus</p>
@@ -110,14 +144,20 @@
         <section id="most_popular">
           <div class="heading_most_popular">
             <h2>Les plus populaires</h2>
-            <i></i>
+            <i class="fa-solid fa-star"></i>
           </div>
           <div class="most_popular_content">
             <img src="" alt="" />
             <div>
               <h3>Hôtel Le soleil du matin</h3>
               <p>Nuit à partir de <strong>128€</strong></p>
-              <i></i>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
             </div>
           </div>
           <div class="most_popular_content">
@@ -125,7 +165,13 @@
             <div>
               <h3>Au coeur de l'eau Chambres d'hôtes</h3>
               <p>Nuit à partir de <strong>71€</strong></p>
-              <i></i>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
             </div>
           </div>
           <div class="most_popular_content">
@@ -133,7 +179,13 @@
             <div>
               <h3>Hôtel Tout bleu et Blanc</h3>
               <p>Nuit à partir de <strong>68€</strong></p>
-              <i></i>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
             </div>
           </div>
         </section>
