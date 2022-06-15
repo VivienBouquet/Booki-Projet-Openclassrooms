@@ -129,12 +129,23 @@ h1 {
 #info {
   display: flex;
   align-items: center;
-  font-weight: 400;
+}
+#info span {
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  margin: 12px;
+  text-align: center;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  position: relative;
 }
 #info i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: var(--blue-color);
-  font-size: 20px;
-  padding: 10px;
 }
 
 /* Media Query */
