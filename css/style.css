@@ -12,6 +12,7 @@ html {
 }
 body {
   max-width: 1450px;
+  font-weight: 500;
 }
 
 /* HEADER */
@@ -41,11 +42,48 @@ nav li {
 nav a {
   text-decoration: none;
   color: black;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 16px;
 }
 .hebergements a {
   color: var(--blue-color);
+}
+
+/* MAIN */
+
+main {
+  margin: 0 50px;
+}
+h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+}
+#heading_title p {
+  margin: 10px 0;
+}
+#search_form {
+  margin: 20px 0;
+  display: flex;
+}
+#search_form * {
+  padding: 15px 20px;
+  font-size: 18px;
+  border: 1px solid var(--grey-color);
+}
+#search_form i {
+  font-size: 18px;
+  background-color: var(--grey-color);
+  border-radius: 15px 0 0 15px;
+}
+#search_form input {
+  font-weight: 700;
+  border-right: none;
+}
+#search_form button {
+  color: white;
+  background-color: var(--blue-color);
+  font-weight: 700;
+  border-radius: 0 15px 15px 0;
 }
 
 /* Media Query */
