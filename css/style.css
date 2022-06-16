@@ -92,7 +92,7 @@ h1 {
 .filter {
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  margin: 20px 0 15px 0;
   font-size: 17px;
   font-weight: 800;
 }
@@ -130,24 +130,28 @@ h1 {
 
 .info {
   display: flex;
-  align-items: center;
 }
 .info span {
-  width: 24px;
-  height: 24px;
-  font-size: 14px;
+  width: 23px;
+  height: 23px;
   margin: 12px;
-  text-align: center;
   border: 1px solid lightgray;
   border-radius: 50%;
+  display: flex;
+  /*
   position: relative;
+  */
 }
 .info i {
+  margin: auto;
+  font-size: 12px;
+  color: var(--blue-color);
+  /*
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--blue-color);
+  */
 }
 .info p {
   font-weight: 400;
