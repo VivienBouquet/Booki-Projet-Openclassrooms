@@ -10,14 +10,14 @@ html {
   --lightblue-color: #deebff;
   --grey-color: #f2f2f2;
 }
-body {
+.bloc_page {
   max-width: 1450px;
   font-weight: 500;
 }
 
 /* HEADER */
 
-nav {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,19 +27,19 @@ nav {
   height: 45px;
   width: 95px;
 }
-nav ul {
+.navbar ul {
   display: flex;
   list-style-type: none;
   padding: 0;
 }
-nav li {
+.navbar li {
   padding: 40px 30px;
   text-align: center;
 }
 .hebergements {
   border-top: 2px solid var(--blue-color);
 }
-nav a {
+.navbar a {
   text-decoration: none;
   color: black;
   font-size: 16px;
@@ -48,7 +48,7 @@ nav a {
   color: var(--blue-color);
 }
 
-/* MAIN HEADING_PAGE */
+/* MAIN HEADER */
 
 main {
   margin: 0 50px;
@@ -58,75 +58,97 @@ h1 {
   font-size: 22px;
   font-weight: 800;
 }
-.heading_title p {
-  margin: 10px 0;
+.main_title p {
+  margin: 12px 0;
 }
+
+/* MAIN HEADER SEARCH_FORM */
+
 .search_form {
   margin: 20px 0;
+  max-width: 435px;
   display: flex;
+  overflow: hidden;
+  border: 1px solid var(--grey-color);
+  border-radius: 17px;
 }
-.search_form * {
+.search_form  > * {
   padding: 14px 17px;
   font-size: 18px;
-  border: 1px solid var(--grey-color);
 }
 .search_form i {
-  font-size: 18px;
+  display: flex;
+}
+.search_form i::before {
+  margin: auto;
+}
+.search_form .fa-location-dot {
   background-color: var(--grey-color);
-  border-radius: 17px 0 0 17px;
 }
 .search_form input {
-  max-width: 235px;
   font-weight: 700;
-  border-right: none;
+  border: none;
+  overflow: hidden;
+  flex-shrink: 2;
+}
+.search_form input:focus {
+  outline: none;
 }
 .search_form button {
   color: white;
   background-color: var(--blue-color);
   font-weight: 700;
-  border-radius: 0 17px 17px 0;
+  border: none;
+}
+.search_form .button_icon {
+  display: none;
 }
 
-/* MAIN HEADING_PAGE FILTER */
+/* MAIN HEADER FILTER */
 
 .filter {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin: 20px 0 15px 0;
   font-size: 17px;
   font-weight: 800;
 }
 .filter_title {
-  margin: 10px;
-  padding-right: 10px;
+  margin: 0 20px 10px 10px;
 }
 .filter_content_container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .filter_content {
   height: 50px;
   display: flex;
   align-items: center;
   border: 2px solid lightgrey;
-  border-left: none;
   border-radius: 40px;
-  padding-right: 10px;
-  margin: 0 12px;
+  padding-right: 5px;
+  margin: 0px 12px 10px 12px;
 }
 .filter_content i {
+  display: flex;
   width: 50px;
   font-size: 19px;
   padding: 15px;
   color: var(--blue-color);
   background-color: var(--lightblue-color);
   border-radius: 50%;
+  margin: -3px;
+}
+.filter_content i::before {
+  margin: auto;
 }
 .filter_content p {
   padding: 0 12px;
 }
 
-/* MAIN HEADING_PAGE INFO */
+/* MAIN HEADER INFO */
 
 .info {
   display: flex;
@@ -138,20 +160,11 @@ h1 {
   border: 1px solid lightgray;
   border-radius: 50%;
   display: flex;
-  /*
-  position: relative;
-  */
 }
 .info i {
   margin: auto;
   font-size: 12px;
   color: var(--blue-color);
-  /*
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  */
 }
 .info p {
   font-weight: 400;
@@ -160,17 +173,22 @@ h1 {
 /* Media Query */
 
 @media screen and (max-width: 768px) {
+
   /* HEADER */
-  nav {
+
+  header {
     flex-direction: column;
     margin: 0;
     margin-top: 20px;
   }
-  nav ul {
+  .navbar {
     width: 100%;
   }
-  nav li {
-    padding: 15px 40px;
+  .navbar ul {
+    width: 100%;
+  }
+  .navbar li {
+    padding: 15px 0;
     width: 50%;
   }
   .hebergements {
@@ -179,5 +197,50 @@ h1 {
   }
   .activites {
     border-bottom: 3px solid var(--grey-color);
+  }
+
+  /* MAIN */
+
+  main {
+    margin: 20px;
+  }
+  .search_form {
+    max-width: 335px;
+    margin-top: 35px;
+  }
+  .search_form button {
+    border-radius: 15px;
+  }
+  .search_form .button_text {
+    display: none;
+  }
+  .search_form .button_icon {
+    display: inline;
+  }
+  .button_icon i {
+    background-color: var(--blue-color);
+    color: white;
+  }
+
+  /* MAIN FILTER */
+
+  .filter {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .filter_title {
+    margin: 0;
+  }
+  .filter_content {
+    margin: 0 10px 15px 0;
+    font-size: 16px;
+  }
+
+  /* MAIN INFO */
+
+  .info span {
+    margin-left: 0;
+    flex-shrink: 0;
   }
 }
