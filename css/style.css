@@ -24,7 +24,6 @@ header {
 }
 .logo {
   height: 45px;
-  width: 95px;
 }
 .navbar ul {
   margin-block-start: 0;
@@ -42,7 +41,6 @@ header {
 .navbar a {
   text-decoration: none;
   color: black;
-  font-size: 16px;
 }
 .hebergements a {
   color: var(--blue-color);
@@ -108,7 +106,6 @@ h1 {
 
 .filter {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   margin: 30px 0 20px 0;
   font-size: 17px;
@@ -305,7 +302,6 @@ h1 {
 
 .activity {
   margin: 65px 0;
-  padding-right: 10px;
 }
 .activity_container {
   display: flex;
@@ -328,7 +324,6 @@ h1 {
 .activity_card_container {
   width: 300px;
   height: 445px;
-  border-radius: 20px;
 }
 
 /* ACTIVITY CARD */
