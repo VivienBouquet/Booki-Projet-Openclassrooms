@@ -14,7 +14,6 @@ html {
   max-width: 1450px;
   font-weight: 500;
 }
-
 /* HEADER */
 
 header {
@@ -260,13 +259,13 @@ h1 {
   gap: 35px;
   margin-top: 2px;
 }
-
-/* MOST POPULAR CARD */
-
 .most_popular_card_container a {
   text-decoration: none;
   color: black;
 }
+
+/* MOST POPULAR CARD */
+
 .most_popular_card_container figure {
   display: flex;
   margin: 0;
@@ -302,21 +301,125 @@ h1 {
   margin-top: auto;
 }
 
-/* Media Query */
-@media screen and (min-width: 1500px) {
-  .bloc_page {
-    margin: auto;
-  }
-  main {
-    margin: 0;
-  }
-  header {
-    margin: 0 20px;
-  }
-  .most_popular_card_container figure {
-    width: 100%;
-  }
+/* MAIN ACTIVITY */
+
+.activity {
+  margin: 65px 0;
+  padding-right: 10px;
 }
+.activity_container {
+  display: flex;
+  gap: 45px;
+}
+.activity_container a {
+  text-decoration: none;
+  color: black;
+}
+.activity h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 25px 0;
+}
+.activity_container h3 {
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 800;
+}
+.activity_card_container {
+  width: 300px;
+  height: 445px;
+  border-radius: 20px;
+}
+
+/* ACTIVITY CARD */
+
+.activity_card_container figure {
+  height: 100%;
+  margin: 0;
+  border-radius: 20px;
+  box-shadow: 0 2px 15px lightgray;
+}
+.activity_card_container img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+/* CARD_CONTENEUR 2 AND 4 */
+.card_inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* CARD 1 AND 4 */
+.activity_container .big_card img {
+  height: 389px;
+}
+
+/* 2nd CARD */
+.card_fort_de_pomegues {
+  height: 236px;
+}
+.card_fort_de_pomegues img {
+  height: 180px;
+}
+
+/* 3rd CARD */
+.card_iles_de_frioul {
+  height: 165px;
+}
+.card_iles_de_frioul img {
+  height: 109px;
+}
+
+/*5th card */
+.card_notre_dame {
+  height: 195px;
+}
+.card_notre_dame img {
+  height: 139px;
+}
+
+/* 6th card */
+.card_parc_longchamp {
+  height: 209px;
+}
+.card_parc_longchamp img {
+  height: 153px;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 220px;
+  padding: 0 300px 0 50px;
+  background-color: var(--grey-color);
+}
+footer p {
+  font-size: 18px;
+  font-weight: 800;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+footer li {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+.footer_list {
+  width: 230px;
+  height: 155px;
+}
+/* Media Query */
 /*
 @media screen and (min-width: 993px) and (max-width: 1440px) {
   .most_popular_card_container {
@@ -331,6 +434,12 @@ h1 {
   }
 }
 */
+@media screen and (min-width: 1450px) {
+  .bloc_page {
+    margin: auto;
+  }
+}
+
 @media screen and (min-width: 1167px) and (max-width: 1440px) {
   .accomodation_card_container {
     margin-top: 32px;
