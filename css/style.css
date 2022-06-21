@@ -38,6 +38,9 @@ header {
 .hebergements {
   border-top: 2px solid var(--blue-color);
 }
+.activites {
+  border-top: 2px solid transparent;
+}
 .navbar a {
   text-decoration: none;
   color: black;
@@ -97,6 +100,7 @@ h1 {
   background-color: var(--blue-color);
   font-weight: 700;
   border: none;
+  cursor: pointer;
 }
 .search_form .button_icon {
   display: none;
@@ -127,6 +131,10 @@ h1 {
   border-radius: 40px;
   padding-right: 5px;
   margin: 0px 12px 10px 12px;
+  cursor: pointer;
+}
+.filter_button:hover {
+  transform: scale(1.08);
 }
 .filter_button i {
   display: flex;
@@ -166,6 +174,9 @@ h1 {
 
 /* MAIN SECTION ACCOMODATION POPULAR */
 
+figure:hover {
+  transform: scale(1.01);
+}
 .accomodation_popular {
   display: flex;
   gap: 40px;
@@ -182,6 +193,7 @@ h1 {
   font-size: 18px;
   font-weight: bolder;
   margin: 40px 0 20px;
+  cursor: pointer;
 }
 .accomodation,
 .most_popular {
@@ -216,7 +228,23 @@ h1 {
   font-size: 20px;
 }
 
+/* 5 STARS NOTATION */
+.ratings {
+  font-size: 12px;
+  color: var(--blue-color);
+}
+.fa-star:not(.ratings:first-child) {
+  margin-left: -2px;
+}
+.four_star .fa-star:last-child {
+  color: lightgrey;
+}
+.three_star i:nth-child(4),
+.three_star i:nth-child(5) {
+  color: lightgrey;
+}
 /* ACCOMODATION CARD */
+
 .accomodation_card_container a {
   flex-grow: 1;
 }
@@ -245,10 +273,7 @@ h1 {
 .accomodation_card_container figcaption:not(i) {
   font-size: 14px;
 }
-.ratings {
-  font-size: 12px;
-  color: var(--blue-color);
-}
+
 
 .most_popular_card_container {
   display: flex;
@@ -397,6 +422,7 @@ footer {
 footer p {
   font-size: 18px;
   font-weight: 800;
+  padding-bottom: 5px;
 }
 footer ul {
   list-style-type: none;
