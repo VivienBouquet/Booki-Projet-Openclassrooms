@@ -1,0 +1,144 @@
+figure:hover {
+  transform: scale(1.01);
+}
+.accomodation_popular {
+  display: flex;
+  gap: 40px;
+  margin: 20px 0;
+}
+.accomodation_popular h2 {
+  font-size: 21px;
+  font-weight: 800;
+}
+.accomodation_popular h3 {
+  font-weight: 800;
+}
+.show_more {
+  font-size: 18px;
+  font-weight: bolder;
+  margin: 40px 0 20px;
+  cursor: pointer;
+}
+.accomodation,
+.most_popular {
+  background-color: var(--grey-color);
+  border-radius: 20px;
+  padding: 25px 40px;
+}
+.accomodation {
+  flex-basis: 65%;
+}
+.accomodation_card_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 22px 0;
+  gap: 30px;
+}
+.accomodation_card_container a {
+  text-decoration: none;
+  color: black;
+}
+.heading_most_popular {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+.heading_most_popular i {
+  font-size: 20px;
+}
+
+/* 5 STARS NOTATION */
+.ratings {
+  font-size: 12px;
+  color: var(--blue-color);
+}
+.fa-star:not(.ratings:first-child) {
+  margin-left: -2px;
+}
+.four_star .fa-star:last-child {
+  color: lightgrey;
+}
+.three_star i:nth-child(4),
+.three_star i:nth-child(5) {
+  color: lightgrey;
+}
+/* ACCOMODATION CARD */
+
+.accomodation_card_container a {
+  flex-grow: 1;
+}
+.accomodation_card_container figure {
+  margin: 0;
+  min-width: 240px;
+  height: 200px;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 0 25px lightgray;
+  border-radius: 15px;
+}
+.accomodation_card_container img {
+  height: 115px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+.accomodation_card_container figcaption {
+  margin-top: 2px;
+}
+.accomodation_card_container figcaption > * {
+  margin: 0;
+  padding: 3px 10px;
+}
+.accomodation_card_container figcaption:not(i) {
+  font-size: 14px;
+}
+
+.most_popular_card_container {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 2px;
+}
+.most_popular_card_container a {
+  text-decoration: none;
+  color: black;
+}
+
+/* MOST POPULAR CARD */
+
+.most_popular_card_container figure {
+  display: flex;
+  margin: 0;
+  width: 340px;
+  height: 145px;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 0 25px lightgrey;
+  border-radius: 20px;
+}
+.most_popular_card_container img {
+  height: 100%;
+  width: 125px;
+  border-radius: 20px 0 0 20px;
+  object-fit: cover;
+}
+.most_popular_card_container figcaption {
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.most_popular_card_container figcaption:not(i) {
+  font-size: 14px;
+}
+.most_popular_card_container figcaption > * {
+  margin: 0;
+}
+.most_popular_card_container h3 {
+  padding: 7px 0;
+}
+.most_popular_card_container .ratings {
+  margin-top: auto;
+}

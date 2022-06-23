@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 70px;
+}
+.logo {
+  height: 45px;
+}
+.navbar ul {
+  margin-block-start: 0;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+.navbar li {
+  padding: 50px 30px;
+  text-align: center;
+}
+.hebergements {
+  border-top: 2px solid var(--blue-color);
+}
+.activites {
+  border-top: 2px solid transparent;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.hebergements a {
+  color: var(--blue-color);
+}
