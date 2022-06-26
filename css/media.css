@@ -5,6 +5,8 @@
 }
 
 @media screen and (max-width: 1423px) {
+
+  /* MAIN ACCOMODATION_POPULAR */
   .accomodation_popular {
     flex-direction: column-reverse;
   }
@@ -13,7 +15,6 @@
   }
   .most_popular_card_container {
     flex-direction: row;
-    margin-bottom: 20px;
     gap: 25px;
   }
   .accomodation_card_container a {
@@ -29,6 +30,33 @@
   .footer_list {
     padding-right: 10px;
   }
+
+  /* MAIN ACTIVITY */
+  .activity_container {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .activity_card_container {
+    height: 200px;
+    flex-grow: 1;
+  }
+  .activity_card_container:nth-child(2),
+  .activity_card_container:nth-child(4) {
+    flex-basis: 65%;
+  }
+  .activity_card_container figure {
+    height: 200px;
+  }
+  .activity_card_container img {
+    height: 150px;
+  }
+  .card_inside {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .card_inside a {
+    flex-basis: 49%;
+  }
 }
 
 @media screen and (max-width: 1208px) {
@@ -43,32 +71,32 @@
     padding: 25px 20px;
     border-radius: 0;
   }
-  .accomodation {
-    background-color: white;
-  }
   .most_popular_card_container figcaption {
     padding: 5px 10px;
+  }
+  .activity {
+    padding: 0 20px;
   }
   footer {
     padding: 0 10% 0 5%;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
-  main {
-    margin: 20px;
+@media screen  and (max-width: 992px) {
+
+  .filter_button_container {
+    gap: 12px;
   }
-  .accomodation_popular h2 {
-    font-size: 22px;
+  /* MAIN ACCOMODATION_POPULAR */
+  .accomodation_popular {
+    gap: 20px;
   }
   .most_popular,
   .accomodation {
-    padding-bottom: 40px;
-    border-radius: 20px;
+    padding: 0 30px 40px;
   }
   .accomodation {
     background-color: white;
-    margin-top: -30px;
   }
   .accomodation_card_container figure {
     min-width: 280px;
@@ -78,7 +106,6 @@
   }
   .most_popular_card_container {
     flex-direction: column;
-    gap: 30px;
   }
   .most_popular_card_container figure {
     width: 100%;
@@ -86,6 +113,17 @@
   }
   .most_popular_card_container img {
     width: 300px;
+  }
+
+  /* MAIN ACTIVITY */
+  .activity {
+    padding: 0 30px;
+    margin-top: 0;
+  }
+  .activity_card_container:nth-child(2),
+  .activity_card_container:nth-child(4) {
+    flex-basis: 90%;
+    order: 2;
   }
   footer {
     padding: 0 5% 0 5%;
@@ -99,7 +137,9 @@
   header {
     flex-direction: column;
     margin: 0;
-    margin-top: 20px;
+  }
+  header img {
+    margin: 20px;
   }
   .navbar {
     width: 100%;
@@ -145,13 +185,12 @@
   .filter {
     flex-direction: column;
     align-items: flex-start;
-    margin: 0;
+    margin-top: 0;
   }
   .filter_title {
-    margin: 0;
+    padding: 0;
   }
   .filter_button {
-    margin: 0 10px 15px 0;
     font-size: 16px;
   }
 
@@ -162,19 +201,20 @@
   }
 
   /* MAIN ACCOMODATION_POPULAR */
-
   .most_popular,
   .accomodation {
     border-radius: 0;
     padding: 20px;
   }
   .accomodation {
-    background-color: white;
     margin-bottom: 0;
     padding-top: 0;
   }
-  .accomodation h2 {
-    margin-top: 0;
+  .accomodation_card_container {
+    gap: 15px;
+  }
+  .accomodation_card_container figure {
+    min-width: 240px;
   }
   .most_popular {
     padding-bottom: 40px;
@@ -183,19 +223,24 @@
     margin-bottom: 10px;
   }
   .most_popular_card_container {
-    flex-direction: column;
     gap: 10px;
-  }
-  .most_popular_card_container figure {
-    width: 100%;
-    font-size: 8px;
   }
   .most_popular_card_container img {
     width: 200px;
   }
 
+  /* MAIN ACTIVITY */
+  .activity {
+    padding: 0 20px;
+  }
+  .activity_container,
+  .activity_card_container {
+    gap: 20px;
+  }
+  .activity_card_container {
+    width: 260px;
+  }
   footer {
-    flex-wrap: wrap;
     padding: 0 20% 5% 10%;
   }
   .footer_list:not(:first-child) {
@@ -204,8 +249,17 @@
 }
 
 @media screen and (max-width: 592px) {
+  .accomodation_card_container {
+    flex-direction: column;
+  }
   .most_popular_card_container img {
     width: 145px;
+  }
+  .activity_card_container:nth-child(2),
+  .activity_card_container:nth-child(4) {
+    order: 0;
+    height: 420px;
+    flex-direction: column;
   }
 }
 
