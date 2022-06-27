@@ -2,9 +2,12 @@
 @import url(./header.css);
 @import url(./main_heading.css);
 @import url(./accomodation_popular.css);
+@import url(./accomodation_popular-card.css);
 @import url(./activity.css);
 @import url(./footer.css);
-@import url(./media.css);
+@import url(./media-desktop.css);
+@import url(./media-tablet.css);
+@import url(./media-mobile.css);
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {

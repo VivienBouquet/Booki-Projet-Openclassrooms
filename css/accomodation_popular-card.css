@@ -1,0 +1,65 @@
+/* ACCOMODATION CARD */
+.accomodation_card_container a {
+    flex-grow: 1;
+  }
+  .accomodation_card_container figure {
+    margin: 0;
+    min-width: 240px;
+    height: 200px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 0 25px lightgray;
+    border-radius: 15px;
+  }
+  .accomodation_card_container img {
+    height: 115px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+  }
+  .accomodation_card_container figcaption {
+    margin-top: 2px;
+  }
+  .accomodation_card_container figcaption > * {
+    margin: 0;
+    padding: 3px 10px;
+  }
+  .accomodation_card_container figcaption:not(i) {
+    font-size: 14px;
+  }
+  
+  /* MOST POPULAR CARD */
+  .most_popular_card_container figure {
+    display: flex;
+    margin: 0;
+    width: 340px;
+    height: 145px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 0 25px lightgrey;
+    border-radius: 20px;
+  }
+  .most_popular_card_container img {
+    height: 100%;
+    width: 125px;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+  }
+  .most_popular_card_container figcaption {
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .most_popular_card_container figcaption:not(i) {
+    font-size: 14px;
+  }
+  .most_popular_card_container figcaption > * {
+    margin: 0;
+  }
+  .most_popular_card_container h3 {
+    padding: 7px 0;
+  }
+  .most_popular_card_container .ratings {
+    margin-top: auto;
+  }
