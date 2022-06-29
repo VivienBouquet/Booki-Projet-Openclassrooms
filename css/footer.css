@@ -5,7 +5,6 @@ footer {
   min-height: 220px;
   padding: 0 19% 0 4%;
   background-color: var(--grey-color);
-  vertical-align: top;
 }
 footer p {
   font-size: 18px;
