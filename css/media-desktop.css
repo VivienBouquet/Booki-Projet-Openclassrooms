@@ -27,9 +27,6 @@
       flex-basis: 32%;
       flex-grow: 1;
     }
-    .footer_list {
-      padding-right: 10px;
-    }
   
     /* MAIN ACTIVITY */
     .activity_container {
@@ -56,6 +53,10 @@
     }
     .card_inside a {
       flex-basis: 49%;
+    }
+
+    .footer_list {
+      padding-right: 10px;
     }
   }
   
