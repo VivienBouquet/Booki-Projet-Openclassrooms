@@ -42,14 +42,16 @@ h1 {
   outline: none;
 }
 .search_form_button {
+  display: flex;
   color: white;
   border: none;
   cursor: pointer;
   background-color: var(--blue-color);
   font-weight: 700;
 }
-.search_form .button_icon {
+.search_form_button i {
   display: none;
+  margin: auto;
 }
 
 /* FILTER */
