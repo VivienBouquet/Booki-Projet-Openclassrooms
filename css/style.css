@@ -19,7 +19,8 @@ html {
   --lightblue-color: #deebff;
   --grey-color: #f2f2f2;
 }
-.bloc_page {
+.bloc-page {
   max-width: 1450px;
   font-weight: 500;
+  margin: auto;
 }

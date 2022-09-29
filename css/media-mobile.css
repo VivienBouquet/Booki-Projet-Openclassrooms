@@ -28,64 +28,64 @@
     border-bottom: 3px solid var(--grey-color);
   }
 
-  /* MAIN_HEADING SEARCH_FORM */
-  .main_heading {
+  /* main-heading search-form */
+  .main-heading {
     margin: 20px;
   }
-  .search_form {
+  .search-form {
     max-width: 335px;
     margin-top: 35px;
   }
-  .search_form_button {
+  .search-form-button {
     border-radius: 15px;
   }
-  .search_form_button span {
+  .search-form-button span {
     display: none;
   }
-  .search_form_button i {
+  .search-form-button i {
     display: inline-block;
     background-color: var(--blue-color);
     color: white;
   }
 
-  /* MAIN_HEADING FILTER */
+  /* main-heading FILTER */
   .filter {
     flex-direction: column;
     align-items: flex-start;
     margin-top: 0;
   }
-  .filter_title {
+  .filter-title {
     padding: 0;
   }
-  .filter_button {
+  .filter-button {
     font-size: 16px;
   }
 
-  /* MAIN_HEADING INFO */
+  /* main-heading INFO */
   .info span {
     margin-left: 0;
     flex-shrink: 0;
   }
 
-  /* MAIN ACCOMODATION_POPULAR */
-  .most_popular,
+  /* MAIN accomodation-popular */
+  .most-popular,
   .accomodation {
     border-radius: 0;
     padding: 20px;
   }
-  .accomodation_card_container {
+  .accomodation-card-container {
     gap: 15px;
   }
-  .accomodation_card_container figure {
+  .accomodation-card-container figure {
     min-width: 240px;
   }
-  .most_popular {
+  .most-popular {
     padding-bottom: 40px;
   }
-  .most_popular_card_container {
+  .most-popular-card-container {
     gap: 10px;
   }
-  .most_popular_card_container img {
+  .most-popular-card-container img {
     width: 200px;
   }
 
@@ -93,30 +93,30 @@
   .activity {
     padding: 0 20px;
   }
-  .activity_container,
-  .activity_card_container {
+  .activity-container,
+  .activity-card-container {
     gap: 20px;
   }
-  .activity_card_container {
+  .activity-card-container {
     width: 260px;
   }
   footer {
     padding: 0 20% 5% 10%;
   }
-  .footer_list:not(:first-child) {
+  .footer-list:not(:first-child) {
     margin-top: 0px;
   }
 }
 
 @media screen and (max-width: 592px) {
-  .accomodation_card_container {
+  .accomodation-card-container {
     flex-direction: column;
   }
-  .most_popular_card_container img {
+  .most-popular-card-container img {
     width: 145px;
   }
-  .activity_card_container:nth-child(2),
-  .activity_card_container:nth-child(4) {
+  .activity-card-container:nth-child(2),
+  .activity-card-container:nth-child(4) {
     order: 0;
     height: 420px;
     flex-direction: column;
@@ -124,10 +124,10 @@
 }
 
 @media screen and (max-width: 376px) {
-  .most_popular_card_container figcaption {
+  .most-popular-card-container figcaption {
     padding: 0 5px;
   }
-  .most_popular_card_container img {
+  .most-popular-card-container img {
     width: 100px;
   }
 }
