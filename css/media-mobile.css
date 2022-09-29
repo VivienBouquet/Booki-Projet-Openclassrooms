@@ -17,6 +17,9 @@
     padding: 15px 0;
     width: 50%;
   }
+  .navbar li:hover {
+    border-top: 2px solid transparent;
+  }
   .hebergements {
     border-top: none;
     border-bottom: 3px solid var(--blue-color);
